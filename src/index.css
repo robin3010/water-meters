@@ -19,10 +19,12 @@ body {
   flex-direction: column;
   height: 100vh;
   padding: 16px;
-  gap: 16px;
 }
 
 .app-container > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   height: 100%;
 }
 
@@ -48,7 +50,7 @@ body {
   width: calc(100% - 64px - 9px);
   height: 32px;
 
-  background: #f0f3f7;
+  background: transparent;
   border-radius: 12px 12px 0 0;
   border-bottom: none;
 }
@@ -102,7 +104,6 @@ body {
 .meter-addr {
   box-sizing: border-box;
   min-width: 430px;
-  flex-grow: 1;
 }
 
 .meter-desc {
