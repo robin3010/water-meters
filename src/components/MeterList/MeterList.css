@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
-  min-height: 80vh;
+  height: calc(100% - 32px);
   border: 1px solid #e0e5eb;
   border-radius: 12px;
 }
@@ -12,7 +12,5 @@
 .meters-list {
   overflow: auto;
   width: 100%;
-  height: 50vh;
   border-bottom: 1px solid #e0e5eb;
-  flex-grow: 1;
 }

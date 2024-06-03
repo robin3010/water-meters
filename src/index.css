@@ -14,10 +14,16 @@ body {
 }
 
 .app-container {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  height: 100vh;
   padding: 16px;
   gap: 16px;
+}
+
+.app-container > div {
+  height: 100%;
 }
 
 /* Meters Styles */
@@ -103,10 +109,6 @@ body {
   box-sizing: border-box;
   width: 304px;
 }
-/* 
-.meters-title .meter-desc {
-  width: 368px;
-} */
 
 .meter-trash {
   box-sizing: border-box;

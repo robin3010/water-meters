@@ -3,8 +3,10 @@ import MeterList from 'components/MeterList/MeterList';
 
 const App: React.FC = () => (
   <div className="app-container">
-    <Header />
-    <MeterList />
+    <div>
+      <Header />
+      <MeterList />
+    </div>
   </div>
 );
 
