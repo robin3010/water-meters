@@ -1,0 +1,115 @@
+:root {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #1f2939;
+  text-align: left;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 16px;
+}
+
+/* Meters Styles */
+
+.meter,
+.meters-title {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto 1.5fr 1fr auto;
+  padding: 6px 0px;
+
+  min-width: 1400px;
+  height: 52px;
+
+  background: #ffffff;
+  border-bottom: 1px solid #e0e5eb;
+}
+
+.meters-title {
+  padding: 0px;
+
+  width: calc(100% - 64px - 9px);
+  height: 32px;
+
+  background: #f0f3f7;
+  border-radius: 12px 12px 0 0;
+  border-bottom: none;
+}
+
+.meter-title-bg {
+  width: 100%;
+  background: #f0f3f7;
+  border-radius: 12px 12px 0 0;
+  border-bottom: 1px solid #e0e5eb;
+}
+
+.meters-title div,
+.meter div {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  gap: 8px;
+
+  height: 32px;
+}
+
+.meter:hover {
+  background: #f7f8f9;
+}
+
+.meter-index {
+  box-sizing: border-box;
+  justify-content: center;
+  width: 48px;
+}
+
+.meter-type {
+  box-sizing: border-box;
+  width: 120px;
+}
+
+.meter-date {
+  box-sizing: border-box;
+  width: 160px;
+}
+
+.meter-auto {
+  box-sizing: border-box;
+  width: 128px;
+}
+.meter-values {
+  box-sizing: border-box;
+  width: 146px;
+}
+
+.meter-addr {
+  box-sizing: border-box;
+  min-width: 430px;
+  flex-grow: 1;
+}
+
+.meter-desc {
+  box-sizing: border-box;
+  width: 304px;
+}
+/* 
+.meters-title .meter-desc {
+  width: 368px;
+} */
+
+.meter-trash {
+  box-sizing: border-box;
+  justify-content: center;
+  width: 64px;
+}

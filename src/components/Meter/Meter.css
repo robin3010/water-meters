@@ -1,0 +1,31 @@
+.trash-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 12px;
+  gap: 8px;
+
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+
+  background: #fee3e3 url('/src/assets/trash.svg') center no-repeat;
+  border: 1px solid #fee3e3;
+  border-radius: 8px;
+  transition: background 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.trash-btn:hover {
+  background: #fed7d7 url('/src/assets/trash_hover.svg') center no-repeat;
+  border-color: #fed7d7;
+}
+
+.trash-btn:disabled {
+  background: #f2f5f8 url('/src/assets/trash_disabled.svg') center no-repeat;
+  border-color: #f2f5f8;
+}
+
+.meter:hover .trash-btn {
+  display: flex;
+}
