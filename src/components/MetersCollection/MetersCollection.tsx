@@ -14,7 +14,7 @@ const MetersCollection: React.FC = observer(() => {
           {...meter}
           key={meter.id}
           index={idx + 1}
-          remove={meter.remove}
+          removeFetch={meter.removeFetch}
         />
       ))}
     </>

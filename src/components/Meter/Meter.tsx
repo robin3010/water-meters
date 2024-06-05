@@ -5,7 +5,7 @@ import { useAreas } from 'store/lib/useStore';
 import { getFullAddressStr, prepareData } from './lib/utils';
 
 const Meter: React.FC<IMeterNodeWithIndex> = observer(
-  ({ index, remove, ...meter }) => {
+  ({ index, removeFetch, ...meter }) => {
     const {
       area: { id },
       _type,
@@ -31,7 +31,7 @@ const Meter: React.FC<IMeterNodeWithIndex> = observer(
             type="button"
             className="trash-btn"
             aria-label="Удалить"
-            onClick={remove}
+            onClick={removeFetch}
           />
         </div>
       </div>

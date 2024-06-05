@@ -14,13 +14,23 @@ const arrayTemplate = (length: number) => {
   return Array.from(Array(length).keys());
 };
 
+const getLastPageNumber = ({
+  currentPage,
+  pageSize,
+  total,
+}: Omit<GetPageNumbersArgs, 'pageNumbersToShow'>) => {
+  const mathTotal = Math.ceil(total / pageSize);
+  if (currentPage === total - pageSize) return mathTotal - 1;
+  return mathTotal;
+};
+
 const getPageNumbers = ({
   currentPage,
   pageSize,
   total,
   pageNumbersToShow = 3,
 }: GetPageNumbersArgs) => {
-  const lastPageNumber = Math.ceil(total / pageSize);
+  const lastPageNumber = getLastPageNumber({ currentPage, pageSize, total });
   const currentPageNumber =
     currentPage <= lastPageNumber ? currentPage : lastPageNumber;
   const maxPagesBeforeCurrentPage = Math.floor(pageNumbersToShow / 2);

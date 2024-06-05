@@ -31,7 +31,7 @@ export const MeterModel = t
     initial_values: t.array(t.number),
   })
   .actions((self) => ({
-    remove: flow(function* remove() {
+    removeFetch: flow(function* removeFetch() {
       try {
         const response = yield* toGenerator(removeMeter(self.id));
         handleStatus(response);
